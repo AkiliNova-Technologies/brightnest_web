@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-orange: #F4A261;
+  --color-orange-light: #FCEBD5;
+  --color-orange-dark: #E08C3B;
+  --color-teal: #6AB7B6;
+  --color-teal-dark: #4A9E9D;
+  --color-teal-light: #E6F5F5;
+  --color-cream: #FFF8F0;
+  --color-cream-dark: #FFF4E8;
+  --color-charcoal: #2E2E2E;
+  --color-text-body: #5A5A5A;
+  --color-blue-dark: #1B3C5D;
+  --color-yellow-accent: #F7D154;
+  --color-red-soft: #E76F6F;
+  --color-green-soft: #7BC47F;
+
+  --font-display: 'Baloo 2', cursive;
+  --font-body: 'Nunito', sans-serif;
+
+  --animate-blob-float: blob-float 8s ease-in-out infinite;
+  --animate-float-card: float-card 3s ease-in-out infinite;
+  --animate-fade-in-up: fade-in-up 0.7s ease forwards;
+
+  @keyframes blob-float {
+    0%, 100% { border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%; }
+    50% { border-radius: 45% 55% 40% 60% / 60% 40% 55% 45%; }
+  }
+  @keyframes float-card {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  @keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+    color: var(--color-charcoal);
+  }
+}

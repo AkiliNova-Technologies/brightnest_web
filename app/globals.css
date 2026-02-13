@@ -46,3 +46,60 @@
     color: var(--color-charcoal);
   }
 }
+
+/* Add to your global.css or stylesheet */
+
+@keyframes bounce-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(5px, -10px); }
+}
+
+@keyframes ping-soft {
+  75%, 100% { transform: scale(1.5); opacity: 0; }
+}
+
+@keyframes draw-line {
+  from { stroke-dashoffset: 100; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes blob-float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(15px, -20px) scale(1.02); }
+  66% { transform: translate(-10px, 15px) scale(0.98); }
+}
+
+@keyframes float-card {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-bounce-soft {
+  animation: bounce-soft 2s infinite ease-in-out;
+}
+
+.animate-float-slow {
+  animation: float-slow 8s infinite ease-in-out;
+}
+
+.animate-ping-soft {
+  animation: ping-soft 2s infinite cubic-bezier(0, 0, 0.2, 1);
+}
+
+.animate-draw-line {
+  stroke-dasharray: 100;
+  animation: draw-line 1.5s ease-out forwards;
+}
+
+.animate-blob-float {
+  animation: blob-float 12s infinite ease-in-out;
+}
+
+.animate-float-card {
+  animation: float-card 3s infinite ease-in-out;
+}

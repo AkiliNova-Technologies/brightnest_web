@@ -162,10 +162,9 @@ export default function Footer() {
         <div className={`border-t border-white/10 py-5 flex flex-col sm:flex-row justify-between items-center text-[13px] text-white/50 gap-2 transition-all duration-1000 delay-300 ${
           visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}>
-          <span className="flex items-center gap-1.5">
+          <span className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center gap-1.5">
             <span>© 2026 BrightNest Early Learning Academy.</span>
             <span className="inline">All rights reserved by AkiliNova Technologies.</span>
-            <Heart size={10} className="text-orange/50 animate-pulse-soft" />
           </span>
           <span className="flex items-center gap-2">
             <a href="#" className="hover:text-orange transition-colors relative group/link">

@@ -164,7 +164,7 @@ export default function Footer() {
         }`}>
           <span className="flex items-center gap-1.5">
             <span>© 2026 BrightNest Early Learning Academy.</span>
-            <span className="hidden sm:inline">All rights reserved by AkiliNova Technologies.</span>
+            <span className="inline">All rights reserved by AkiliNova Technologies.</span>
             <Heart size={10} className="text-orange/50 animate-pulse-soft" />
           </span>
           <span className="flex items-center gap-2">
